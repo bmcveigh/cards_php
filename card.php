@@ -6,12 +6,14 @@
  */
 
 class Deck {
-  private $cards = array();
-  private $players = array();
-  private $numberOfPlayers = 4;
+  private $cards;
+  private $players;
+  private $numberOfPlayers;
 
   public function __construct() {
   	$players = array();
+
+    $numberOfPlayers = 4;
 
   	for ($i = 0; $i < $numberOfPlayers; $i++) {
   	  $players[] = new Player('Player ' . $i + 1);
