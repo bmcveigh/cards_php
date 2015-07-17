@@ -8,4 +8,4 @@
 
 require_once 'includes/bootstrap.inc';
 
-print 'Under construction.';
+print cards_message_generate('Under construction.', 'warning');
