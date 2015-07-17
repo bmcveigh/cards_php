@@ -4,7 +4,6 @@
  * @file
  * A library for managing a deck of cards.
  */
-
 class Deck {
   private $cards;
   private $players;
@@ -19,6 +18,7 @@ class Deck {
   	  $players[] = new Player('Player ' . $i + 1);
   	}
   }
+
 
   public function getCards() {
   	return $this->cards;
@@ -51,6 +51,25 @@ class Deck {
   }
 }
 
+
+class Hand {
+  private $hand;
+  private $player;
+
+  public function __construct($hand) {
+    $this->hand = $hand;
+  }
+
+  public function setHand($hand) {
+    $this->hand = $hand;
+  }
+
+  public function getHand() {
+    return $this->hand;
+  }
+}
+
+
 class Card {
   private $suit;
   private $value;
@@ -66,22 +85,5 @@ class Card {
 
   public function getValue() {
   	return $this->value;
-  }
-}
-
-class Hand {
-  private $hand;
-  private $player;
-
-  public function __construct($hand) {
-  	$this->hand = $hand;
-  }
-
-  public function setHand($hand) {
-  	$this->hand = $hand;
-  }
-
-  public function getHand() {
-  	return $this->hand;
   }
 }
