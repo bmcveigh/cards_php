@@ -16,7 +16,6 @@ class Card {
   private $value;
 
   public function __construct($suit = JOKER, $value = 1) {
-    parent::__construct();
     $this->suit = $suit;
     $this->value = $value;
   }
