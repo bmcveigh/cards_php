@@ -21,7 +21,7 @@ class Deck {
 
     for ($suit = 0; $suit <= 3; $suit++) {
       for ($value = 1; $value <= 13; $value++) {
-        $this->deck[$cardCount] = new Card($value, $suit);
+        $this->deck[$cardCount++] = new Card($value, $suit);
       }
     }
 
