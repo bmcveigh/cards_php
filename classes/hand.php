@@ -4,9 +4,8 @@ class Hand {
 
   private $hand;
 
-  public function __construct($hand) {
-    parent::__construct();
-    $this->hand = $hand;
+  public function __construct() {
+  	$this->hand = array();
   }
 
   public function setHand($hand) {
