@@ -20,7 +20,7 @@ Hand.
 
 ```php
 $deck = new Deck();
-//$deck->shuffleDeck();
+$deck->shuffleDeck();
 
 $hand = new Hand();
 
