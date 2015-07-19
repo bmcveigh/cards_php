@@ -13,6 +13,8 @@ following block of code:
 require_once '/path/to/library/cards_php/cards.php';
 ```
 
+### Example of implementing the API into your project
+
 In your code, below would be an example of creating a Deck and creating a
 Hand.
 
@@ -26,4 +28,19 @@ for ($i = 0; $i < 13; $i++) {
   $hand->addCard($deck->dealCard());
 }
 print $hand->getHandCount();
+```
+
+### Overriding custom classes or functions
+
+If you don't like the implementation of a certain function,
+each function in each class is designed to be overriden,
+object-oriented style. Below is an example of how to override
+the dealCard() function in the Deck class:
+
+```php
+class CustomDeck extends Deck {
+  public function dealCard() {
+  	// Custom code here...
+  }
+}
 ```
