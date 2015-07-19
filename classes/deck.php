@@ -2,6 +2,8 @@
 
 /**
  * @file
+ * This file represents the Deck class, which contains all of the
+ * Card objects.
  */
 class Deck {
   /**
@@ -52,6 +54,13 @@ class Deck {
     return count($this->deck) - $this->cardsUsed;
   }
 
+  /**
+   * Gets a Card object from the deck, removes it from the array,
+   * and returns the object.
+   *
+   * @return Card
+   *   The last Card object in the deck array.
+   */
   public function dealCard() {
     if ($this->cardsUsed === count($this->deck)) {
       print 'No cards are left in the deck.\n';
