@@ -7,6 +7,7 @@ class Card {
   const DIAMONDS = 2;
   const CLUBS = 3;
   const JOKER = 4;
+  
   const ACE = 1;
   const JACK = 11;
   const QUEEN = 12;

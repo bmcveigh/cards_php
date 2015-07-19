@@ -56,7 +56,9 @@ class Deck {
     if ($this->cardsUsed === count($this->deck)) {
       print 'No cards are left in the deck.\n';
     }
-
-    $this->cardsUsed++;
+    else {
+      $this->cardsUsed++;
+      return array_pop($this->deck);
+    }
   }
 }
