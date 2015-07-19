@@ -62,7 +62,7 @@ class Deck {
    *   The last Card object in the deck array.
    */
   public function dealCard() {
-    if ($this->cardsUsed === count($this->deck)) {
+    if ($this->cardsUsed === count($this->deck) || empty($this->deck)) {
       print 'No cards are left in the deck.\n';
     }
     else {
