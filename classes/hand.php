@@ -61,21 +61,6 @@ class Hand {
   }
 
   /**
-   * Remove the card in a specified position from the hand.
-   * @param position the position of the card that is to be removed, where
-   * positions are starting from zero.
-   * @throws IllegalArgumentException if the position does not exist in
-   * the hand, that is if the position is less than 0 or greater than
-   * or equal to the number of cards in the hand.
-   */
-  // public void removeCard(int position) {
-  //     if (position < 0 || position >= hand.size())
-  //         throw new IllegalArgumentException("Position does not exist in hand: "
-  //                 + position);
-  //     hand.remove(position);
-  // }
-
-  /**
    * Gets the number of cards in the current hand.
    */
   public function getHandCount() {
