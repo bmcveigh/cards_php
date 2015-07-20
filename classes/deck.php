@@ -56,6 +56,10 @@ class Deck {
    * when the deck is first created or after the deck has been
    * shuffled. It decreases by 1 each time the dealCard() method
    * is called.
+   *
+   * @return int
+   *   The number of cards left.
+   *
    */
   public function cardsLeft() {
     return count($this->deck) - $this->cardsUsed;
