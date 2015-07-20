@@ -2,6 +2,7 @@
 
 class DeckTest extends PHPUnit_Framework_TestCase {
     public function testCanBeNegated() {
-        // Test code...
+	  $deck = new Deck();
+	  $deck->shuffleDeck();
     }
 }
