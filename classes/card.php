@@ -52,11 +52,11 @@ class Card {
    */
   public function getSuitAsString() {
     switch ($this->suit) {
-      case SPADES: return "Spades";
-      case HEARTS: return "Hearts";
-      case DIAMONDS: return "Diamonds";
-      case CLUBS: return "Clubs";
-      default: return "Joker";
+      case SPADES: return 'Spades';
+      case HEARTS: return 'Hearts';
+      case DIAMONDS: return 'Diamonds';
+      case CLUBS: return 'Clubs';
+      default: return 'Joker';
     }
   }
 
