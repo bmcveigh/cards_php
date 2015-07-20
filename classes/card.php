@@ -21,10 +21,24 @@ class Card {
     $this->value = $value;
   }
 
+  /**
+   * Returns the suit for the object.
+   *
+   * @return int
+   *   Returns either SPADES, HEARTS, DIAMONDS,
+   *   CLUBS, or JOKER in integer format.
+   */
   public function getSuit() {
     return $this->suit;
   }
 
+  /**
+   * Returns the value for the object.
+   *
+   * @return int
+   *   Returns ACE, JACK, QUEEN, or KING
+   *   in integer format.
+   */
   public function getValue() {
     return $this->value;
   }
