@@ -18,6 +18,13 @@ class Deck {
    */
   private $cardsUsed;
 
+  /**
+   * The constructor for the Deck class.
+   *
+   * @param boolean $includeJokers
+   *   TRUE if jokers should be included and FALSE if not.
+   *   This is an optional parameter.
+   */
   public function __construct($includeJokers = FALSE) {
     $cardCount = 0;
 

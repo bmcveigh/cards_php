@@ -16,6 +16,15 @@ class Card {
   private $suit;
   private $value;
 
+  /**
+   * The constructor for the Card class.
+   *
+   * @param int $suit
+   *   The suit of the card.
+   *
+   * @param int $value
+   *   The value of the card.
+   */
   public function __construct($suit = JOKER, $value = 1) {
     $this->suit = $suit;
     $this->value = $value;
